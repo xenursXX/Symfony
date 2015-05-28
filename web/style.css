@@ -1,0 +1,77 @@
+.tralala{
+    background-color: #296ad4;
+      padding:0;
+  color:white;
+
+}
+.part1{
+    border-bottom: solid 3px #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+
+}
+.pictos{
+    background-color: #2155aa;
+    vertical-align: middle;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+
+.pictos img{
+
+    padding-bottom: 15px;
+}
+
+.blockmode{
+    background-color: #3c669a;
+    color:#edc81c;
+
+}
+
+
+.blocktrophee{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color:#0b584a;
+}
+.blockpanel{
+   color:#edc81c;
+}
+
+.blocktrophee p{
+  color:#0b584a;
+}
+
+.blockmode p,
+
+.blockpanel p{
+ color:#edc81c;
+}
+
+
+li{
+  list-style-type: none; 
+}
+
+.middle{
+  margin-top: 300px;
+}
+body{
+  background-color: #38b097;
+
+
+
+}
+.login{
+  border-bottom: solid 2px #38b097;
+  border-top: solid 2px #38b097;
+  margin-bottom: 50px;
+
+
+}
+.container p{
+  color:black;
+}

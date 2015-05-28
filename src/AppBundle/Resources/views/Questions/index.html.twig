@@ -1,0 +1,60 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Questions list</h1>
+
+    <table class="records_list">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>good answer</th>
+            <th>bad answer</th>
+            <th>bad answer2</th>
+            <th>bad answer3</th>
+            <th>Themes</th>
+
+
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for questions in questions %}
+            <tr>
+                <td><a href="{{ path('questions_show', { 'id': questions.id }) }}">{{ questions.id }}</a></td>
+                <td>{{ questions.name }}</td>
+                <td>{{ questions.goodanswer }}</td>
+                <td>{{ questions.badanswer }}</td>
+                <td>{{ questions.badanswer2 }}</td>
+                <td>{{ questions.badanswer3 }}</td>
+                <td>{{ questions.themes }}</td>
+
+
+
+
+
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('questions_show', { 'id': questions.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('questions_edit', { 'id': questions.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('questions_create') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+{% endblock %}

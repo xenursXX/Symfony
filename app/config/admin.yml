@@ -1,0 +1,17 @@
+services:
+    sonata.admin.questions:
+        class: AppBundle\Admin\QuestionsAdmin
+        arguments: [~, AppBundle\Entity\Questions, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Questions", label: "Questions" }
+    sonata.admin.tag:
+        class: AppBundle\Admin\TagAdmin
+        arguments: [~, AppBundle\Entity\Tag, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Tag", label: "Tag" }
+
+    sonata.admin.user:
+        class: AppBundle\Admin\UserAdmin
+        arguments: [~, AppBundle\Entity\User, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "User", label: "User" }

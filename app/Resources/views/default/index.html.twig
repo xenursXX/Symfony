@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+<div class="container-fluid" style="background-color: #3c669a">
+    <div class="container">
+        <div class="col-md-12 part1">
+            <div class="col-md-offset-5 col-md-3  ">
+                 <img src="{{ asset('logo_seriesquizz.png') }}" alt=""/>
+            </div>
+         </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid blockpanel" style="background-color: #3c669a">
+    <div class="container">
+        <div class="col-md-4 col-md-offset-1 panel panel-success text-center">
+             <div class="panel-heading">
+                <h3 class="panel-title">Ajoutez vos questions!</h3>
+            </div>
+            <div class="panel-body">
+    
+       <p>Cette application est la votre: rajoutez vos propres
+        questions et réponses pour peut être piéger vos
+        adversaires </p><br>
+                 <a class="btn btn-primary" href="{{ url('questions_create') }}">
+                <i class="glyphicon glyphicon-plus-sign"></i>
+                Ajouter
+            </a>
+             </div>
+        </div>
+    <div class="col-md-4 col-md-offset-2 panel panel-success text-center">
+        <div class="panel-heading">
+             <h3 class="panel-title">Enregistrez-vous pour jouer !</h3>
+        </div>
+            <div class="panel-body">
+    
+                <p>Cette application est la votre: Enregistrez vous en tant qu'utilisateur! si vous voulez jouer à l'application </p><br>
+                    <a class="btn btn-primary" href="{{ url('user_new') }}">
+                <i class="glyphicon glyphicon-plus-sign"></i>
+                Ajouter
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid blocktrophee" style="background-color: #3a717d>
+    <div class="container">
+        <div class="col-md-3 text-center">
+             <img src="{{ asset('picto1.png') }}" alt=""/>
+                <p>Gagnez de l'expérience
+                 et des niveaux</p>
+        </div>
+         <div class="col-md-3 text-center">
+             <img src="{{ asset('picto2.png') }}" alt=""/>
+                 <p>Plusieurs thèmes de jeu:</p>
+                 <p>série américaines, policier,</p>
+                 <p>sci-fi, etc...</p>
+         </div>
+         <div class="col-md-3 text-center">
+                <img src="{{ asset('picto3.png') }}" alt=""/>
+                <p>Soyez le mieux classé</p>
+         </div>
+         <div class="col-md-3 text-center">
+             <img src="{{ asset('picto4.png') }}" alt=""/>
+                <p>jouer et défier</p>
+                <p>vos amis</p>
+         </div>
+    </div>
+</div>
+
+    <div class="container-fluid blockmode">
+        <div class="container">
+            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                <h3>Mode SIMPLE</h3><br/>
+                <p>Une série de 20 questions et 8 secondes pour répondre à chacune d'elles! Vous ne perdez pas de points à chaque erreur! Soyez rassuré</p>
+                <br/><br/>
+                <img src="{{ asset('pictox1.png') }}" alt=""/>
+                <img src="{{ asset('pictox2.png') }}" alt=""/>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                <h3>Mode Hardcore</h3><br/>
+                <p>Vous avez 1 minute pour répondre au plus grand nombre de réponses ! Vous gagnez des points en donnant les bonnes, mais vous en perdez si vous vous trompez! </p>
+                <br/><br/>
+                <img src="{{ asset('pictox1.png') }}" alt=""/>
+                <img src="{{ asset('pictox2.png') }}" alt=""/>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                <h3>Mode Multijoueur</h3><br/>
+                <p>A venir un mode multijoueurs 1 vs 1, nous verrons bien qui sera le meilleurs d'entre vous ! A vous de jouer !</p>
+                <br/><br/>
+                <img src="{{ asset('pictox1.png') }}" alt=""/>
+                <img src="{{ asset('pictox2.png') }}" alt=""/>
+                <img src="{{ asset('pictox3.png') }}" alt=""/>
+                <img src="{{ asset('pictox4.png') }}" alt=""/>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
